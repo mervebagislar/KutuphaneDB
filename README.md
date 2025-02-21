@@ -1,19 +1,8 @@
-Kütüphanede kitap ödünç alma işlemleri için yaptığım bir veri tabanı projesi.Proje MSSQL ile yapıldı.
+This is a database project for managing book borrowing transactions in a library, developed using MSSQL.
 
-Kütüphane veri tabanı senaryosu: Bir kütüphanede kitaplar, yazarlar, yayınevleri ve öğrenciler 
-arasındaki ilişkileri izlemek ve bilgileri saklamak amacıyla bir veri tabanı talep edilmektedir. Kitaplar 
-tablosunda her kitabın eşsiz bir ISBN numarası ve başlığı bulunmakta, ayrıca kitabın yazarının T.C. kimlik 
-numarası ve kitabın basıldığı yayınevinin adı da kaydedilmektedir. Yazarlar tablosunda her yazarın eşsiz 
-bir T.C. kimlik numarası, adı ve adresi yer alırken, yayınevleri tablosunda her bir yayınevinin eşsiz adı, 
-adresi ve birden fazla telefon numarası saklanmaktadır. Öğrenciler tablosunda ise her öğrencinin 
-numarası, adı, adresi ve birden fazla telefon numarası bilgileri tutulmaktadır. Kitap ödünç alma 
-işlemleri için özel bir tablo oluşturduk ve burada öğrencinin numarası, ödünç alınan kitabın ISBN 
-numarası ve ödünç alma tarihi bilgilerini kaydediyoruz. 
-Amaç: Bu veri tabanı yapısı sayesinde, kitapların yazarları, yayınevleri ve öğrenciler arasındaki ilişkileri 
-yönetip izleyerek verileri bütünlük içinde saklayabilir ve etkili bir şekilde kullanabiliriz.
+Library Database Scenario: A database is requested to track and store information about books, authors, publishers, and students in a library. The Books table contains a unique ISBN number and title for each book, along with the author's T.C. identity number and the publisher's name. The Authors table includes a unique T.C. identity number, name, and address for each author, while the Publishers table stores a unique name, address, and multiple phone numbers for each publisher. The Students table contains the student’s number, name, address, and multiple phone numbers. A special table for book borrowing transactions has been created to store the student’s number, ISBN of the borrowed book, and the borrowing date. Purpose: This database structure allows us to manage and track the relationships between books, authors, publishers, and students, storing the data in an organized manner for efficient use.
 
-Veri tabanını oluşturuken ilk yapmamız gereken şey ER diyagramı oluşturup sonrasında ilişkileri tablo haline dökmek.
-Foreign key ve primary keyleri doğru şekilde belirledikten sonra tabloları oluşturup sql sorguları yapabiliriz.
+When creating the database, the first step is to design an ER diagram and then convert the relationships into tables. After correctly defining foreign keys and primary keys, we can create the tables and perform SQL queries.
 
 
 
